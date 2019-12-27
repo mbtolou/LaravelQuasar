@@ -1,28 +1,19 @@
 <template>
-  <q-layout view="hHh Lpr lFf">
-    <q-header elevated class="glossy">
+  <q-layout view="hHh Lpr lFf ">
+    <q-header elevated class>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="drawer = !drawer"
-          aria-label="Menu">
+        <q-btn flat dense round @click="drawer = !drawer" aria-label="Menu">
           <q-icon name="menu" />
         </q-btn>
 
-        <q-toolbar-title>
-          نمونه کد vue با کوثر ورژن{{$q.version}}
-        </q-toolbar-title>
-
+        <q-toolbar-title>نمونه کد vue با کوثر ورژن{{$q.version}}</q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="drawer"
-      bordered
-      content-class="bg-grey-2">
-      <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
+    <q-drawer v-model="drawer" bordered content-class="bg-grey-2">
+      <q-scroll-area
+        style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd"
+      >
         <q-list>
           <q-item-label header>Essential Links</q-item-label>
           <q-item exact tag="a" clickable :to="{name: 'public.index'}">
@@ -67,10 +58,14 @@
           </q-item>
         </q-list>
       </q-scroll-area>
-      <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
+      <q-img
+        class="absolute-top"
+        src="https://cdn.quasar.dev/img/material.png"
+        style="height: 150px"
+      >
         <div class="absolute-bottom bg-transparent text-center">
           <q-avatar size="70px" class="q-mb-sm">
-            <img src="~assets/smile.jpg">
+            <img src="~assets/smile.jpg" />
           </q-avatar>
           <div class="text-weight-bold">{{ username }}</div>
           <div>{{ email }}</div>
@@ -92,7 +87,8 @@ import FooterLayout from '../global/FooterLayout'
 export default {
   preFetch ({ store, currentRoute, previousRoute, redirect, ssrContext }) {
     Loading.show()
-    return store.dispatch('auth/getUserData')
+    return store
+      .dispatch('auth/getUserData')
       .then(response => {
         if (!store.getters['auth/isAuth']) {
           return redirect(`/login?redirect=${currentRoute.fullPath}`)
@@ -125,4 +121,12 @@ export default {
 
 <style scoped>
 
+.q-header {
+  background-image: linear-gradient(15deg, #051e3e, #051e3e);
+  background-image: -webkit-linear-gradient(15deg, #051e3e, #051e3e);
+  background-image: -o-linear-gradient(15deg, #051e3e, #051e3e);
+  background-image: -moz-linear-gradient(15deg, #051e3e, #051e3e);
+  color: white;
+  font-family: 'Shabnam';
+}
 </style>

@@ -23,7 +23,7 @@ const veeLang = lang => {
     case 'en':
       return 'en'
     case 'fa':
-      return 'fa-ir'
+      return 'fa'
     default:
       return 'en'
   }
@@ -58,7 +58,7 @@ const localLang = lang => {
 }
 
 export default {
-  async setLanguage({ commit }, [i18n, lang]) {
+  async setLanguage ({ commit }, [i18n, lang]) {
     try {
       await import(`quasar/lang/${qLang(lang)}`)
         .then(language => {
@@ -76,8 +76,10 @@ export default {
         })
       moment.locale(momentLang(lang))
       commit('SET_LANGUAGE', lang)
+      console.log("test")
+
     } catch (e) {
-      // console.log(e)
+      console.log(e)
     }
   }
 }

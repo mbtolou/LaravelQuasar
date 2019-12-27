@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh lpr lFf">
-    <q-header elevated class="bg-indigo-6 glossy">
+    <q-header elevated class="bg-indigo-6">
       <q-toolbar>
         <q-btn flat round icon="home" :to="{name: 'public.index'}"></q-btn>
         <q-toolbar-title>
