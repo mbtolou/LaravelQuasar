@@ -57,7 +57,7 @@ En esta actualización se trabaja con el CLI de Quasar, por lo cual se requiere 
     ServerAdmin manfred@manfred047.com
     DocumentRoot "C:/xampp/htdocs/laravel-quasar/public"
     ServerName lq-test
-    ServerAlias lq.test
+    ServerAlias 127.0.0.1
 </VirtualHost>
 ```
 ##### 3. Reiniciar Apache
@@ -74,8 +74,8 @@ En esta actualización se trabaja con el CLI de Quasar, por lo cual se requiere 
 ::1             localhost
 
 # Laravel Quasar
-127.0.0.1       lq.test
-::1             lq.test
+127.0.0.1       127.0.0.1
+::1             127.0.0.1
 ```
 
 ## Documentación de Quasar

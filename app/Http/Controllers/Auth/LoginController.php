@@ -19,6 +19,7 @@ class LoginController extends AccessTokenController
         $tokenResponse = parent::issueToken($server);
         $content = $tokenResponse->getContent();
         $data = json_decode($content, true);
+
         if(isset($data["error"])) {
             return response()->json([
                 'error' => 'invalid_credentials',
