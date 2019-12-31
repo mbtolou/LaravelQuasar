@@ -1,9 +1,9 @@
 {
-    "name": "laravel-quasar",
+    "name": "laravelquasar",
     "version": "1.0.0",
-    "description": "Laravel with Quasar Framework (SPA) by Manfred047.",
+    "description": "Laravel with Quasar Framework (SPA) by mbtolou.",
     "productName": "Laravel with Quasar Framework",
-    "cordovaId": "com.manfred047",
+    "cordovaId": "com.mbtolou",
     "keywords": [
         "laravel",
         "php",
@@ -21,16 +21,16 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Manfred047/laravel-quasar.git"
+        "url": "git+https://github.com/mbtolou/LaravelQuasar.git"
     },
     "author": {
         "name": "Emanuel Chable Concepcion",
-        "email": "manfred@manfred047.com",
-        "url": "https://manfred047.com/"
+        "email": "mb.tolou@gmail.com",
+        "url": "https://mbtolou.com/"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Manfred047/laravel-quasar/issues"
+        "url": "https://github.com/mbtolou/LaravelQuasar/issues"
     },
     "homepage": "https://quasar-framework.org",
     "private": true,

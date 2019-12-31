@@ -1,5 +1,5 @@
 {
-    "name": "laravel-quasar",
+    "name": "laravelquasar",
     "type": "project",
     "description": "Laravel with Quasar Framework for Web SPA.",
     "keywords": [
@@ -21,6 +21,7 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "fruitcake/laravel-cors": "^1.0",
         "laravel/framework": "^6.0",
         "laravel/passport": "^7.4",
         "laravel/tinker": "^1.0"

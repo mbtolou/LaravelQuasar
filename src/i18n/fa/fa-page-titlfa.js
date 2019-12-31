@@ -4,6 +4,6 @@ export const faPageTitles = {
   'home_title': 'میز',
   'user_title': 'کاربر',
   'info_title': 'اطلاعات',
-  'logout_title': 'ورود به سیستم ',
+  'logout_title': 'خروج از سیستم ',
   'e404_title': 'صفحه یافت نشد'
 }

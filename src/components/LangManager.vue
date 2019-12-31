@@ -1,6 +1,6 @@
 <template>
-  <div class="q-pa-md">
-    <q-select
+  <div class="q-pa-none q-ma-none">
+    <q-select dense
       v-model="language"
       :options="languages"
       emit-value

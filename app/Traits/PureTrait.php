@@ -1,10 +1,10 @@
 <?php
 /**
- * @copyright 2018 Manfred047
- * @author Emanuel Chablé Concepción <manfred@manfred047.com>
+ * @copyright 2018 mbtolou
+ * @author Emanuel Chablé Concepción <mb.tolou@gmail.com>
  * @version 1.0.0
- * @website: https://manfred047.com
- * @github https://github.com/Manfred047
+ * @website: https://mbtolou.com
+ * @github https://github.com/mbtolou
  */
 
 namespace App\Traits;

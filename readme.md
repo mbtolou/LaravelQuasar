@@ -1,8 +1,3 @@
-# By Manfred047
-## [Website](https://laravel-quasar.manfred047.com/)
-
-## Español
-
 ## Versiones
 * Laravel 6.0
 * Quasar 1.1.0
@@ -21,6 +16,7 @@ En el directorio raiz, ejecuta los siguientes comandos:
 9. php artisan passport:install
 
 Copia los tokens generados (Password grant client) y agrega/actualiza las siguientes llaves en tu archivo .env:\
+USING command `php artisan passport:client --password` \
  `PASSWORD_GRANT_CLIENT_ID` \
  `PASSWORD_GRANT_CLIENT_SECRET`
  
@@ -54,8 +50,8 @@ En esta actualización se trabaja con el CLI de Quasar, por lo cual se requiere 
 2. Agregar la siguiente información:
 ```
 <VirtualHost *:80>
-    ServerAdmin manfred@manfred047.com
-    DocumentRoot "C:/xampp/htdocs/laravel-quasar/public"
+    ServerAdmin mb.tolou@gmail.com
+    DocumentRoot "C:/xampp/htdocs/LaravelQuasar/public"
     ServerName lq-test
     ServerAlias 127.0.0.1
 </VirtualHost>

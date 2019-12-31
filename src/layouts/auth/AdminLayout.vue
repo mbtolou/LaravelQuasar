@@ -120,12 +120,11 @@ export default {
 </script>
 
 <style scoped>
-
-.q-header {
-  background-image: linear-gradient(15deg, #051e3e, #051e3e);
-  background-image: -webkit-linear-gradient(15deg, #051e3e, #051e3e);
-  background-image: -o-linear-gradient(15deg, #051e3e, #051e3e);
-  background-image: -moz-linear-gradient(15deg, #051e3e, #051e3e);
+.q-toolbar {
+  background-image: linear-gradient(145deg,#004c8f 11%,#026fce 75%);
+  background-image: -webkit-linear-gradient(145deg,#004c8f 11%,#026fce 75%);
+  background-image: -o-linear-gradient(145deg,#004c8f 11%,#026fce 75%);
+  background-image: -moz-linear-gradient(145deg,#004c8f 11%,#026fce 75%);
   color: white;
   font-family: 'Shabnam';
 }

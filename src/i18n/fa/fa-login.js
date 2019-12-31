@@ -1,6 +1,6 @@
 export const faLogin = {
   'title': 'صفحه ورود',
-  'logout': 'ورود به سیستم',
+  'logout': 'خروج از سیستم',
   'success_login': 'خوش آمدید',
   'success_logout': 'به زودی می بینمت',
   'form': {

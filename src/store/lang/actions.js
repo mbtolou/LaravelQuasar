@@ -76,7 +76,7 @@ export default {
         })
       moment.locale(momentLang(lang))
       commit('SET_LANGUAGE', lang)
-      console.log("test")
+      // console.log("test")
 
     } catch (e) {
       console.log(e)
