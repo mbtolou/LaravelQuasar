@@ -61,7 +61,7 @@ export default {
   async setLanguage ({ commit }, [i18n, lang]) {
     try {
       await import(`quasar/lang/${qLang(lang)}`)
-        .then(language => {
+      .then(language => {
           Quasar.lang.set(language.default)
         })
       await import(`vee-validate/dist/locale/${veeLang(lang)}.json`)
