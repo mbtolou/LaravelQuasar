@@ -15,6 +15,7 @@
             :active="link === 'inbox'"
             @click="link = 'inbox'"
             active-class="my-menu-link"
+            :to="{name:'auth.info'}"
           >
             <q-item-section avatar>
               <q-icon name="inbox" />

@@ -22,6 +22,7 @@ import { mapGetters, mapActions } from 'vuex'
 import { Loading } from 'quasar'
 import FooterLayout from '../global/FooterLayout'
 import SidebarLayoutT1 from '../auth/SidebarLayoutT1'
+// import SidebarLayout from '../auth/SidebarLayout'
 export default {
   preFetch ({ store, currentRoute, previousRoute, redirect, ssrContext }) {
     Loading.show()
@@ -43,6 +44,7 @@ export default {
   components: {
     FooterLayout,
     SidebarLayoutT1
+    // SidebarLayout
   },
   computed: {
     ...mapGetters('auth', ['username', 'email'])
